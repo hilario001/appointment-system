@@ -2,7 +2,7 @@
 <html lang=en>
 <head>
     <meta charset="utf-8">
-    <title>Appointment System</title>
+    <title>Swift Appointments</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/font.css">
@@ -10,13 +10,17 @@
 </head>
 <body>
     <nav>
-        <a>Appointment System</a>
+        <a href="index.php" class="logo">SWIFT</a>
         <ul>
-            <li>About us</li>
-            <li>Contact</li>
+            <li><a href="pages/about.php">About us</a></li>
+            <li><a href="pages/contact.php">Contact</a></li>
+            <li><a href="pages/services.php">Services</a></li>
         </ul>
+        <div class="wrapper">
+            <a class="signup">SIGN UP</a>
+            <a class="login">LOG IN</a>
+        </div>
     </nav>
-    <a href="pages/user_register.php">test</a>
 
     <script src="js/script.js"></script>
 </body>
