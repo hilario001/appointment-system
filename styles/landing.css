@@ -1,0 +1,15 @@
+nav {
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+}
+
+nav ul {
+    display: flex;
+    width: 12rem;
+    border: 1px solid orange;
+    list-style-type: none;
+    justify-content: space-evenly;
+}

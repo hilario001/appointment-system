@@ -9,7 +9,7 @@
 </head>
 <body>
     <h1>Create an account</h1>
-    <form action="register.php" method="post"> 
+    <form action="../server/auth_user_register.php" method="post"> 
         <input type="text" name="email" placeholder="Email" required></input>
         <input type="text" name="password" placeholder="Password" required></input>
         <input type="submit" value="Submit">

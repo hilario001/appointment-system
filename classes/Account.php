@@ -1,5 +1,5 @@
 <?php
-require_once "auto_include.php";
+require_once "../autoload_register.php";
 
 class Account {
     public object $db;
@@ -39,7 +39,6 @@ class Account {
             return false;
         }
 
-        // Hash the password first using BCRYPT then insert into the database.
         $password_hashed = password_hash($password, PASSWORD_BCRYPT);
 
         $query = "INSERT INTO $table (email, password) VALUES (\"$email\", \"$password_hashed\")";

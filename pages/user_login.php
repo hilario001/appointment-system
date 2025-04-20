@@ -14,10 +14,10 @@
         <div class="wrap">
             <h1>Login</h1>
             <p>Enter your account details</p>
-        <?php 
-            require "../server/auto_include.php";
+        <?php
+            require "../autoload_register.php";
 
-            // Handle input errors e.g. incorrect password, none existing accounts
+            // Handle input errors e.g. incorrect password, none existing accounts.
             $flash = new Flash();
             $result = $flash->render('error');
 
@@ -26,7 +26,7 @@
             }
         ?>
         </div>
-        <form action="../server/auth_user.php" method="post">
+        <form action="../server/auth_user_login.php" method="post">
             <input type="email" name="email" placeholder="Email" required>
             <input type="password" name="password" placeholder="Password" required>
             <a class="forgot-pass" href="#">Forgot password?</a>
