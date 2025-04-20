@@ -1,15 +1,55 @@
 nav {
-    border: 1px solid black;
+    border: 1px solid #163a5d;
+    border-radius: 20px;
+    border-right: none;
+    margin: 0 auto;
+    margin-top: 18px;
+    width: 90%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 0 3rem;
+    padding-left: 2rem;
 }
 
 nav ul {
     display: flex;
-    width: 12rem;
-    border: 1px solid orange;
+    width: 22rem;
     list-style-type: none;
     justify-content: space-evenly;
+    font-family: Sans;
 }
+
+.logo {
+    font-weight: bold;
+    color: #163a5d;
+    align-content: center;
+}
+
+.wrapper a {
+    padding: 0 19px;
+    align-content: center;
+    font-weight: semi-bold;
+    cursor: pointer;
+}
+
+.wrapper {
+    display: flex;
+    font-size: 0.8rem;
+}
+
+.wrapper .signup {
+    color: black;
+    background: none;
+    border: none;
+}
+
+.wrapper .login {
+    color: white;
+    background: #163a5d;
+    border: none;
+    border-radius: 0 20px 20px 0;
+}
+
+.wrapper a:hover {
+    opacity: 0.83;
+}
+
