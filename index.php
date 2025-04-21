@@ -18,8 +18,13 @@
         </ul>
         <div class="wrapper">
             <a class="signup">SIGN UP</a>
-            <a class="login">LOG IN</a>
+            <a href="user_login.php" class="login">LOG IN</a>
         </div>
+        <?php
+            require "includes/db.php";
+
+            $db = db_connect();
+        ?>
     </nav>
 
     <script src="js/script.js"></script>

@@ -1,8 +1,6 @@
 <?php
-require_once "../autoload_register.php";
+require "../includes/db.php";
+require "../includes/account.php";
 
-// Authenticate
-$acc = new Account();
-
-$response = $acc->create("user", $_POST['email'], $_POST['password']);
-($response) ? header("Location: ../pages/user_login.php") : header("Location: ../pages/user_register.php");
+$response = create(
+($response) ? header("Location: ../user_login.php") : header("Location: ../user_register.php");

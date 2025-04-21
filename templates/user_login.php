@@ -15,15 +15,8 @@
             <h1>Login</h1>
             <p>Enter your account details</p>
         <?php
-            require "../autoload_register.php";
-
-            // Handle input errors e.g. incorrect password, none existing accounts.
-            $flash = new Flash();
-            $result = $flash->render('error');
-
-            if (!empty($result)) {
-                echo "<p class=\"error\">" . $result . "</p>";
-            }
+            // Handle input error messages e.g. incorrect password, none existing accounts.
+            session_render_var("error");
         ?>
         </div>
         <form action="../server/auth_user_login.php" method="post">
