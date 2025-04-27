@@ -1,0 +1,50 @@
+body {
+    background-color: #FFF5E1
+}
+
+main {
+    padding: 10px 100px;
+    gap: 50px 10px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+img {
+    border-radius: 10px;
+    width: 90%;
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+.story {
+    flex-basis: 100%;
+}
+
+.story p {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.mission {
+    flex: 1;
+}
+
+.img {
+    flex: 1;
+    text-align: center;
+}
+
+@media (max-width: 950px) {
+    main {
+        flex-direction: column;
+    }
+
+    .mission p {
+        max-width: 600px;
+        text-align: center;
+    }
+}

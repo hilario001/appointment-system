@@ -19,9 +19,16 @@ h1 {
     margin: 0;
 }
 
-a {
-    text-decoration: none;
-    color: #163a5d;
+img {
+    width: 85px;
+}
+
+p, p a {
+    font-size: 0.8rem;
+}
+
+p {
+    margin-top: 1rem;
 }
 
 a:hover {
@@ -30,6 +37,7 @@ a:hover {
 
 a,
 a:visited {
+    text-decoration: none;
     color: #163a5d;
 }
 
@@ -64,18 +72,6 @@ input[type=submit]:hover {
     background: white;
     color: #163a5d;
     font-weight: bold;
-}
-
-img {
-    width: 85px;
-}
-
-p, p a {
-    font-size: 0.8rem;
-}
-
-p {
-    margin-top: 1rem;
 }
 
 .forgot-pass {

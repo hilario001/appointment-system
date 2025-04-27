@@ -2,16 +2,17 @@
 <html lang=en>
 <head>
     <meta charset="utf-8">
-    <title>Swift Appointments</title>
+    <title>Services</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/font.css">
     <link rel="stylesheet" href="styles/landing.css">
+    <link rel="stylesheet" href="styles/services.css">
 </head>
 <body>
     <div class="container">
         <nav>
-            <a href="index.php" class="logo">SWIFT</a>
+            <a href="index.html" class="logo">SWIFT</a>
             <ul>
                 <li><a href="about.php">About us</a></li>
                 <li><a href="contact.php">Contact</a></li>
@@ -22,21 +23,10 @@
                 <a href="user_login.php" class="login">LOG IN</a>
             </div>
         </nav>
+        <main>
+            <h2>Some of the services we offered</h2>
+        </main>
     </div>
-        <?php
-            require "includes/error.php";
-            require "includes/db.php";
-
-            $db = db_connect();
-
-            $qry = $db->prepare("SELECT * FROM user");
-            $qry->execute();
-
-            //while ($row = $qry->fetch()) {
-            //    echo htmlspecialchars($row['email']) . "<br>";
-            //}
-        ?>
-
-    <script src="js/script.js"></script>
 </body>
 </html>
+

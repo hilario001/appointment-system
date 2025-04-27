@@ -10,10 +10,10 @@
 </head>
 <body>
     <main>
-        <a href="#"><img src="../assets/swift-logo.png" alt="Company logo"></a>
+        <a href="../index.php"><img src="../assets/swift-logo.png" alt="Company logo"></a>
         <div class="wrap">
             <h1>Login</h1>
-            <p>Enter your account details</p>
+            <p class="p">Enter your account details</p>
         <?php
             // Handle input error messages e.g. incorrect password, none existing accounts.
             session_render_var("error");
@@ -25,7 +25,7 @@
             <a class="forgot-pass" href="#">Forgot password?</a>
             <input type="submit" value="Login">
         </form>
-        <p>Don't have an account? <a href="create.html">Create now</a></p>
+        <p>Don't have an account? <a href="user_register.php">Join us</a></p>
     </main>
     <script src="js/form_input_persist.js"></script>
 </body>

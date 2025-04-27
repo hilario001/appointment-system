@@ -4,6 +4,7 @@
 
 body {
     font-family: Poppins;
+    font-weight: normal;
     margin: 0;
     padding: 0;
 }
@@ -19,4 +20,10 @@ a {
 
 button {
     cursor: pointer;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
