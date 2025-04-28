@@ -1,21 +1,26 @@
-body {
-    background-color: #FFF5E1
+#about {
+    padding: 5rem 0;
 }
 
-main {
-    padding: 10px 100px;
+.about-wrapper {
+    background-color: #E8E8E8;
+}
+
+.about-content-container {
+    max-width: 1200px;
+    margin: 0 auto;
     gap: 50px 10px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
 }
 
-img {
+#about img {
     border-radius: 10px;
     width: 90%;
 }
 
-h2, h3 {
+.story h2, .mission h3 {
     text-align: center;
 }
 
@@ -39,7 +44,7 @@ h2, h3 {
 }
 
 @media (max-width: 950px) {
-    main {
+    .about-content-container {
         flex-direction: column;
     }
 

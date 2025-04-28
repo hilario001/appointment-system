@@ -1,3 +1,3 @@
 <?php
-require "includes/flash.php";
+require "includes/session.php";
 require "templates/user_login.php";

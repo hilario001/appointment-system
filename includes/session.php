@@ -13,7 +13,7 @@ function session_retrieve_var(string $var): mixed
     return $tmp;
 }
 
-function session_render_var(string $var, ?string $tag = "p", ?string $selector = ""): void
+function session_render_var(string $var, string $tag = "p", string $selector = ""): void
 {
     $value = session_retrieve_var($var);
 
@@ -21,5 +21,6 @@ function session_render_var(string $var, ?string $tag = "p", ?string $selector =
         return;
     }
 
-    echo "<" . tag . " class=" . "$selector >" . $value . "</tag>";
+    /* echo "<" . tag . " class=" . "$selector >" . $value . "</" . $tag . ">"; */
+    echo $value;
 }

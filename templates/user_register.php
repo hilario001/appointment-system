@@ -18,6 +18,7 @@
         <?php
             // Handle input error messages e.g. incorrect password, none existing accounts.
             session_render_var("error");
+            echo $_SESSION["error"];
         ?>
         </div>
         <form action="../server/auth_user_register.php" method="post"> 

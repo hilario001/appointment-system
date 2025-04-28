@@ -1,0 +1,13 @@
+.contact-wrapper {
+    background-color: #07070b; 
+}
+
+#contact, a {
+    color: white;
+}
+
+#contact {
+    padding: 5rem 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}

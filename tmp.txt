@@ -1,0 +1,15 @@
+
+        <?php
+            require "includes/error.php";
+            require "includes/db.php";
+
+            $db = db_connect();
+
+            $qry = $db->prepare("SELECT * FROM user");
+            $qry->execute();
+
+            //while ($row = $qry->fetch()) {
+            //    echo htmlspecialchars($row['email']) . "<br>";
+            //}
+        ?>
+

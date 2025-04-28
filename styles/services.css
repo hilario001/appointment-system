@@ -1,4 +1,11 @@
-body {
-    background-color: #FFF5E1
+.services-wrapper {
+    background-color: #564256;
+}
+
+#services {
+    max-width: 1200px;
+    margin: 0 auto;
+    color: white;
+    padding: 4rem 0;
 }
 

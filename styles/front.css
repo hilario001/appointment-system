@@ -1,0 +1,38 @@
+.front-wrapper {
+    margin-top: 70px;
+}
+
+#front {
+    padding: 17vw 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#front h1 {
+    font-size: 3.3rem;
+    margin: 0;
+}
+
+#front p {
+    font-size: 1.4rem;
+    margin-top: 3px;
+    margin-bottom: 1.7rem;
+}
+
+#front a {
+    border: none;
+    padding: 0.9rem 1.4rem;
+    border-radius: 8px;
+    background-color: lightgreen;
+    transition: 0.3s;
+    cursor: pointer;
+    color: black;
+}
+
+#front a:hover {
+    background-color: white;
+    border: 1px solid lightgreen;
+    color: black;
+}

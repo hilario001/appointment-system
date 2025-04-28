@@ -1,4 +1,14 @@
+.nav-wrapper {
+    backdrop-filter: blur(30px);
+    box-shadow: 0px 0px 30px -14px rgba(0,0,0,0.75);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
 nav {
+    max-width: 1200px;
     margin: 0 auto;
     padding: 10px 0;
     display: flex;
@@ -35,7 +45,7 @@ nav li a:hover {
 
 .wrapper {
     display: flex;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 
 .wrapper .signup {

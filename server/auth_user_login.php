@@ -1,8 +1,11 @@
 <?php
-require_once "../autoload_register.php";
+declare(strict_types=1);
+require "../includes/account.php";
+require "../includes/db.php";
 
-// Authenticate
-$acc = new Account();
+$db = db_connect();
 
-$response = $acc->login("user", $_POST['email'], $_POST['password']);
-($response) ? header("Location: ../pages/user_dashboard.php") : header("Location: ../pages/user_login.php");
+if (account_auth("user", $_POST['email'], $_POST['password']))
+    header("Location: ../user_dashboard.php");
+else
+    header("Location: ../user_login.php");
