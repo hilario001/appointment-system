@@ -7,7 +7,7 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-    <p>Login successfully</p>
+    <p>Hello, World!</p>
 
     <script src="js/script.js"></script>
 </body>

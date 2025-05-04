@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <title>Swift Appointments</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles/general.css">
-    <link rel="stylesheet" href="styles/font.css">
-    <link rel="stylesheet" href="styles/nav.css">
-    <link rel="stylesheet" href="styles/front.css">
-    <link rel="stylesheet" href="styles/about.css">
-    <link rel="stylesheet" href="styles/services.css">
-    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="../styles/general.css">
+    <link rel="stylesheet" href="../styles/font.css">
+    <link rel="stylesheet" href="../styles/nav.css">
+    <link rel="stylesheet" href="../styles/front.css">
+    <link rel="stylesheet" href="../styles/about.css">
+    <link rel="stylesheet" href="../styles/services.css">
+    <link rel="stylesheet" href="../styles/contact.css">
 </head>
 <body>
     <div class="nav-wrapper">
@@ -22,8 +22,8 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="wrapper">
-                <a href="user_register.php" class="signup">SIGN UP</a>
-                <a href="user_login.php" class="login">LOG IN</a>
+                <a href="../user_register.php" class="signup">SIGN UP</a>
+                <a href="../user_login.php" class="login">LOG IN</a>
             </div>
         </nav>
     </div>
@@ -75,8 +75,6 @@
         </section>
     </div>
     <?php
-
-    session_start();
     ?>
 </body>
 </html>

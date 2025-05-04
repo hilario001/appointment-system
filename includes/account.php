@@ -1,6 +1,5 @@
 <?php
 declare(strict_types=1);
-require "db.php";
 
 function account_auth(string $table, string $email, string $pass): bool
 {
@@ -10,19 +9,12 @@ function account_auth(string $table, string $email, string $pass): bool
     $sth->execute();
     $row = $sth->fetch();
 
-    if (empty($row)) {
-        $_SESSION['error'] = "User does not exist";
+    if (empty($row) || !password_verify($pass, $row['password'])) {
+        $_SESSION['error'] = "Invalid credentials";
         return false;
     }
 
-    $pass_verified = password_verify($pass, $row['password']);
-
-    if ($pass_verified) {
-        return true;
-    } else {
-        $_SESSION['error'] = "Incorrect password";
-        return false;
-    }
+    return true;
 }
 
 function account_new(string $table, string $email, string $pass): bool

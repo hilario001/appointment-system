@@ -1,11 +1,7 @@
-# Landing page
-- Long enough frontend design to support scrolling 
-
 # Admin space.
-- Login
+- Services offered
 
 # Features to implement
-- Services offered
 - Available time
 - Confirm appointments
 - View pending appointments
@@ -14,9 +10,5 @@
 
 # User space
 
-# Misc
-Form persistence:
-https://www.javascript-coder.com/javascript-form/keep-checkbox-value-after-form-submit/
-
 # DONE
-- [x] User login and register
+User login and register

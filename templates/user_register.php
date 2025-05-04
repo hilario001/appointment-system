@@ -17,8 +17,10 @@
             <p>Get started by creating an account</p>
         <?php
             // Handle input error messages e.g. incorrect password, none existing accounts.
-            session_render_var("error");
-            echo $_SESSION["error"];
+            // 1st arg: session variable
+            // 2nd arg: html tag
+            // 3rd arg: css selector
+            session_render_var("error", "p", "error");
         ?>
         </div>
         <form action="../server/auth_user_register.php" method="post"> 
@@ -28,6 +30,6 @@
         </form>
         <p>Already have an account? <a href="user_login.php">Login</a></p>
     </main>
-    <script src="script.js"></script>
+    <script src="../js/form_input_persist.js"></script>
 </body>
 </html>

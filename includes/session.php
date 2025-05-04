@@ -21,6 +21,5 @@ function session_render_var(string $var, string $tag = "p", string $selector = "
         return;
     }
 
-    /* echo "<" . tag . " class=" . "$selector >" . $value . "</" . $tag . ">"; */
-    echo $value;
+    echo "<" . $tag . " class=" . "$selector>" . $value . "</" . $tag . ">";
 }
