@@ -1,14 +1,8 @@
-# Admin space.
-- Services offered
-
-# Features to implement
-- Available time
-- Confirm appointments
-- View pending appointments
-- Adding manually of appointment
-- Notification via email for newly book appointments
-
-# User space
-
-# DONE
-User login and register
+todo:
+crud for services management
+cru for available appointment schedule
+confirmation for booked appointments
+notify user when confirmed (optional)
+manual adding of appointments (optional)
+paypal payment
+appointment history

@@ -1,0 +1,25 @@
+nav {
+    box-shadow: 0px 0px 30px -10px rgba(0,0,0,0.75);
+    position: absolute;
+    height: 100vh;
+    width: 12rem;
+    padding-top: 5rem;
+}
+
+main {
+    margin-left: 12rem;
+    border: 1px solid black;
+}
+
+ul {
+    height: 30vh;
+}
+
+button {
+    border: none;
+    text-align: left;
+    padding: 0.9rem;
+    padding-right: 0;
+    width: 100%;
+    font-family: Sans;
+}
