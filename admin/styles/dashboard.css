@@ -1,25 +1,31 @@
 nav {
     box-shadow: 0px 0px 30px -10px rgba(0,0,0,0.75);
-    position: absolute;
-    height: 100vh;
+    position: fixed;
+    top: 0;
+    height: 100%;
     width: 12rem;
     padding-top: 5rem;
 }
 
 main {
     margin-left: 12rem;
-    border: 1px solid black;
+    padding: 3rem;
 }
 
 ul {
     height: 30vh;
 }
 
-button {
+nav button {
     border: none;
     text-align: left;
     padding: 0.9rem;
     padding-right: 0;
     width: 100%;
     font-family: Sans;
+}
+
+button.active {
+    background-color: #163a5d;
+    color: white;
 }

@@ -1,0 +1,21 @@
+
+        <div class="service">
+            <?php if ($row['image']): ?>
+                <img src="../uploads/<?= $row['image'] ?>">
+            <?php endif; ?>
+            <div class="service-info">
+                <p><?= htmlspecialchars($row['name']) ?></p>
+            </div>
+            <p class="service-price">$<?= htmlspecialchars($row['price']) ?></p>
+            <div class="service-actions">
+                <button href="service_add.php?id=<?= $row['id'] ?>"
+                        class="btn-edit"
+                        onclick="showModal('.modal-edit')">
+                        Edit
+                </button>
+                <button class="btn-del" onclick="showModal('.modal-del')">Delete</button>
+            </div>
+        </div>
+
+                        onclick="showModal('.modal-del')"
+ onclick="return confirm('Are you sure?')"

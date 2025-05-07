@@ -8,17 +8,15 @@
     <link href="../styles/font.css" type="text/css" rel="stylesheet">
     <link href="styles/dashboard.css" type="text/css" rel="stylesheet">
     <link href="styles/service.css" type="text/css" rel="stylesheet">
-    <link href="styles/sched.css" type="text/css" rel="stylesheet">
-    <link href="styles/confirmation.css" type="text/css" rel="stylesheet">
+    <link href="styles/review.css" type="text/css" rel="stylesheet">
     <link href="styles/history.css" type="text/css" rel="stylesheet">
 </head>
 <body>
     <nav>
         <ul>
-            <li><button onclick="loadContent('service.php')">Services</button></li>
-            <li><button onclick="loadContent('sched.php')">Schedule</button></li>
-            <li><button onclick="loadContent('confirmation.php')">Review</button></li>
-            <li><button onclick="loadContent('history.php')">History</button></li>
+            <li><button onclick="loadContent(this, 'service/service.php')">Services</button></li>
+            <li><button onclick="loadContent(this, 'review.php')">Review</button></li>
+            <li><button onclick="loadContent(this, 'history.php')">History</button></li>
         </ul>
     </nav>
     <main></main>

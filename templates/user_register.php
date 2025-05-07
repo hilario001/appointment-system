@@ -23,7 +23,7 @@
             session_render_var("error", "p", "error");
         ?>
         </div>
-        <form action="../server/auth_user_register.php" method="post"> 
+        <form action="server/register.php" method="post"> 
             <input type="email" name="email" placeholder="Email" required>
             <input type="password" name="password" placeholder="Password" required>
             <input type="submit" value="Register">

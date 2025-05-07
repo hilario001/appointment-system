@@ -2,7 +2,6 @@
 declare(strict_types=1);
 require "../includes/account.php";
 require "../includes/db.php";
-require "../includes/error.php";
 
 session_start();
 $db = db_connect();

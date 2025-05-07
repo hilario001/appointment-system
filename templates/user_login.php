@@ -22,7 +22,7 @@
             session_render_var("error", "p", "error");
         ?>
         </div>
-        <form action="../server/auth_user_login.php" method="post">
+        <form action="../server/login.php" method="post">
             <input type="email" name="email" placeholder="Email" required>
             <input type="password" name="password" placeholder="Password" required>
             <a class="forgot-pass" href="#">Forgot password?</a>

@@ -4,10 +4,15 @@ declare(strict_types=1);
 function account_auth(string $table, string $email, string $pass): bool
 {
     global $db;
-    $query = "SELECT * FROM $table WHERE email=\"$email\"";
-    $sth = $db->prepare($query);
-    $sth->execute();
-    $row = $sth->fetch();
+    $query = "SELECT * FROM $table WHERE email=?";
+    // Old
+    /* $sth = $db->prepare($query); */
+    /* $sth->execute(); */
+    /* $row = $sth->fetch(); */
+    // New
+    $stmt = $db->prepare($query);
+    $stmt->execute([$email]);
+    $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
     if (empty($row) || !password_verify($pass, $row['password'])) {
         $_SESSION['error'] = "Invalid credentials";
@@ -20,10 +25,13 @@ function account_auth(string $table, string $email, string $pass): bool
 function account_new(string $table, string $email, string $pass): bool
 {
     global $db;
-    $query = "SELECT * FROM $table WHERE email=\"$email\"";
-    $sth = $db->prepare($query);
-    $sth->execute();
-    $row = $sth->fetch();
+    $query = "SELECT * FROM $table WHERE email=?";
+    /* $sth = $db->prepare($query); */
+    /* $sth->execute(); */
+    /* $row = $sth->fetch(); */
+    $stmt = $db->prepare($query);
+    $stmt->execute([$email]);
+    $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
     if ($row) {
         $_SESSION['error'] = "User already exists";
