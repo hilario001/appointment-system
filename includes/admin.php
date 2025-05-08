@@ -20,11 +20,11 @@ function service_create(
     return false;
 }
 
-function service_del(string $id): bool
+function del(string $id, string $table): bool
 {
     global $db;
 
-    if ($db->query("DELETE FROM service WHERE id='$id'")) {
+    if ($db->query("DELETE FROM $table WHERE id='$id'")) {
         // TODO: Delete also the img of the service in ../uploads
         // https://stackoverflow.com/questions/2371408/how-to-delete-a-file-via-php
         return true;
@@ -67,4 +67,21 @@ function service_edit(
         return true;
     }
     return false;
+}
+
+use PayPalCheckoutSdk\Payments\AuthorizationsCaptureRequest;
+function capture_payment($auth_id) {
+    global $client;
+    global $db;
+    $request = new AuthorizationsCaptureRequest($auth_id);
+    $request->body = [];
+
+    try {
+        $response = $client->execute($request);
+        $stmt = $db->prepare("UPDATE paypal_payment SET status = 'captured' WHERE auth_id = ?");
+        $stmt->execute([$auth_id]);
+        return $response->result;
+    } catch (Exception $e) {
+        return "Error: " . $e->getMessage();
+    }
 }

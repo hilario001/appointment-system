@@ -1,6 +1,14 @@
-<script src="../script.js"></script>
-<link href="../styles/service.css" type="text/css" rel="stylesheet">
-
+<!doctype html>
+<html lang=en>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="../script.js"></script>
+    <link href="../styles/service.css" type="text/css" rel="stylesheet">
+    <link href="../styles/edit.css" type="text/css" rel="stylesheet">
+</head>
+<body>
 <h2>Services</h2>
 <button class="btn-add" onclick="showModal('.modal-add')">Add New</button>
 <hr>
@@ -51,3 +59,6 @@
         </form>
     </div>
 </div>
+
+</body>
+</html>

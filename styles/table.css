@@ -1,0 +1,36 @@
+.review-container {
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border: none;
+}
+
+th {
+    padding: 1rem;
+    border: none;
+    text-align: left;
+}
+
+td {
+    border: none;
+    padding: 1rem;
+}
+
+.btn-confirm {
+    border: 1px solid #163a5d;
+    margin-right: 0.7rem;
+    transition: 0.3s;
+}
+
+.btn-confirm:hover {
+    background-color: #163a5d;
+    color: white;
+}
+
+.btn-del, .btn-confirm {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+    border-radius: 4px;
+}

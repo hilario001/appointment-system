@@ -57,11 +57,11 @@
             </div>
         </section>
     </div>
-    <div class="services-wrapper">
+    <!-- <div class="services-wrapper">
         <section id="services">
             <h2>Some of the services we offered</h2>
         </section>
-    </div>
+    </div> -->
     <div class="contact-wrapper">
         <section id="contact">
             <div>

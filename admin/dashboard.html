@@ -14,9 +14,34 @@
 <body>
     <nav>
         <ul>
-            <li><button onclick="loadContent(this, 'service/service.php')">Services</button></li>
-            <li><button onclick="loadContent(this, 'review.php')">Review</button></li>
-            <li><button onclick="loadContent(this, 'history.php')">History</button></li>
+            <li>
+                <button 
+                    data-file="service/service.php"
+                    onclick="loadContent(this, 'service/service.php')">
+                    Services
+                </button>
+            </li>
+            <li>
+                <button
+                    data-file="review/review.php"
+                    onclick="loadContent(this, 'review/review.php')">
+                    Review
+                </button>
+            </li>
+            <li>
+                <button 
+                    data-file="upcoming/upcoming.php"
+                    onclick="loadContent(this, 'upcoming/upcoming.php')">
+                    Upcoming appointments
+                </button>
+            </li>
+            <li>
+                <button 
+                    data-file="history/history.php"
+                    onclick="loadContent(this, 'history/history.php')">
+                    History
+                </button>
+            </li>
         </ul>
     </nav>
     <main></main>

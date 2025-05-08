@@ -1,0 +1,46 @@
+nav {
+    box-shadow: 0px 0px 30px -10px rgba(0,0,0,0.75);
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 12rem;
+    padding-top: 5rem;
+}
+
+main {
+    margin-left: 12rem;
+    padding: 3rem;
+}
+
+/* ul { */
+/*     max-height: 30vh; */
+/* } */
+
+nav button {
+    border: none;
+    text-align: left;
+    padding: 0.9rem;
+    padding-right: 0;
+    width: 100%;
+    font-family: Sans;
+}
+
+button.active {
+    background-color: #163a5d;
+    color: white;
+}
+
+a.logout {
+    position: relative;
+    border: 1px solid black;
+    top: 7rem;
+    left: 0.9rem;
+    font-size: 0.7rem;
+    padding: 0.5rem;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+a.logout:hover {
+    border: 1px solid red;
+}
